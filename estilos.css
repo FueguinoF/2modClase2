@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --colorppal: rgb(173, 173, 173);
+    --colorsecundario: gray;
+    --colorfuente: white;
+    --colorfuentesec: rgb(204, 204, 204); 
+    --fuente: "Verdana";
+}
+
+#calcu{
+    height: 60vh;
+    width: 40vh;
+    background-color: var(--colorppal);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+#cinput{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cbutton{
+    height: 20vh;
+    width: 32vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#cres{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    border-radius: 8px;
+    padding: 2px;
+    background-color: var(--colorsecundario);
+    font-family: var(--fuente);
+    color: var(--colorfuente);
+}
+
+input{
+    border-radius: 6px;
+    padding: 4px;
+    text-align: center;
+    background-color: var(--colorsecundario);
+    font-family: var(--fuente);
+    color: var(--colorfuente);
+    
+}
+
+input::placeholder {
+    color:var(--colorfuentesec)
+}
+
+#cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#labres{
+    font-family: var(--fuente);
+    color: var(--colorfuente);
+    font-size: 20px;
+}
