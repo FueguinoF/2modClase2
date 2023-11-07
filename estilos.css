@@ -4,18 +4,84 @@
 }
 
 :root{
-    --colorppal: rgb(173, 173, 173);
-    --colorsecundario: gray;
-    --colorfuente: white;
-    --colorfuentesec: rgb(204, 204, 204); 
+    --colorPpal: rgb(173, 173, 173);
+    --colorSecundario: gray;
+    --colorFuente: antiquewhite;
+    --colorFuenteSec: rgb(204, 204, 204); 
+    --colorEfectosFuente: rgb(53, 248, 14);
     --fuenteFrm: "Verdana";
     --fuenteDisplay: "seven segment" , sans-serif;
+}
+
+h2{
+    font-family: var(--fuenteFrm);
+    color: var(--colorFuente);
+}
+
+header{
+    height: 10vh;
+    font-family: var(--fuenteFrm);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)) ,url('./img/math2.png');
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+header a{
+    color: var(--colorFuente);
+    text-decoration: none;
+}
+
+#contlogo{
+    margin-left: 50px;
+}
+
+header a:hover{
+    color: var(--colorEfectosFuente)
+}
+
+footer i:hover{
+    font-size:larger;
+    color: var(--colorEfectosFuente);
+}
+
+footer i{
+    font-size: 16px;
+    color: black
+}
+
+#cont{
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)) ,url('./img/math.png');
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+footer{
+    height: 7vh;
+    font-family: var(--fuenteFrm);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--colorFuenteSec);
+}
+
+#titulo{
+    background-color: rgb(32, 32, 32);
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 #calcu{
     height: 460px;
     width: 320px;
-    background-color: var(--colorppal);
+    background-color: var(--colorPpal);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -51,9 +117,9 @@ button{
     width: 100%;
     border-radius: 8px;
     padding: 3px;
-    background-color: var(--colorsecundario);
+    background-color: var(--colorSecundario);
     font-family: var(--fuenteFrm);
-    color: var(--colorfuente);
+    color: var(--colorFuente);
 }
 
 input{
@@ -61,14 +127,14 @@ input{
     padding: 10px;
     text-align: left;
     font-size: 22px;
-    background-color: var(--colorsecundario);
+    background-color: var(--colorSecundario);
     font-family: var(--fuenteDisplay);
-    color: var(--colorfuente);
+    color: var(--colorFuente);
     
 }
 
 input::placeholder {
-    color:var(--colorfuentesec);
+    color:var(--colorFuenteSec);
     text-align: right;
 }
 
@@ -82,15 +148,8 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#cont{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 #labres{
     font-family: var(--fuenteFrm);
-    color: var(--colorfuente);
+    color: var(--colorFuente);
     font-size: 20px;
 }
