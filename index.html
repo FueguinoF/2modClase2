@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <title>Calculadora</title>
 </head>
 <body>
     <header>
-
     </header>
     <main>
         <div id="cont">
             <h2> Calculadora </h2>
             <section id="calcu">
                 <div id="cinput">
-                    <input type="text" id="op1" placeholder="Operando 1">
-                    <input type="text" id="op2" placeholder="Operando 2">
+                    <input type="number" id="op1" placeholder="Operando 1">
+                    <input type="number" id="op2" placeholder="Operando 2">
                 </div>
                 <div id="cbutton">
                     <button id="sumabtn"> Sumar </button>
-                    <button id="restabtn"> Restar</button>
+                    <button id="restabtn"> Restar </button>
                     <button id="multbtn"> Multiplicar </button>
                     <button id="divbtn"> Dividir </button>
                 </div>
@@ -29,12 +29,11 @@
                     <input type="text" name="" id="ipres" readonly>
                 </div>
             </section>
-        </div>
-        
+        </div>    
     </main>
     <footer>
-
     </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>  
 </body>
 </html>
